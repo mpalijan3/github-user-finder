@@ -55,7 +55,7 @@ class App extends Component {
         loading: false
       });
     } catch (error) {
-      console.error('Fetch error:', error);
+      //console.error('Fetch error:', error);
       this.setState({
         error: error.message,
         loading: false,

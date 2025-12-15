@@ -1,7 +1,8 @@
 import React from 'react';
 
 const UserDetails = ({ user, repos, onReset }) => {
-  return (
+  if (!user || !repos) return null;
+    return (
     <div>
       <div>
         <img src={user.avatar_url} alt={user.name} width="100" />
