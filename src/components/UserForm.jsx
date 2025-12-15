@@ -28,3 +28,9 @@ const UserForm = ({ onSearch }) => {
 };
 
 export default UserForm;
+
+import PropTypes from 'prop-types';
+
+UserForm.propTypes = {
+  onSearch: PropTypes.func.isRequired
+};

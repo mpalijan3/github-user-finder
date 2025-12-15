@@ -23,3 +23,11 @@ const UserDetails = ({ user, repos, onReset }) => {
 };
 
 export default UserDetails;
+
+import PropTypes from 'prop-types';
+
+UserDetails.propTypes = {
+  user: PropTypes.object.isRequired,
+  repos: PropTypes.array.isRequired,
+  onReset: PropTypes.func.isRequired
+};
